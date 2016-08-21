@@ -1,0 +1,14 @@
+extends ./layout
+
+block content
+    h2 Index Page
+    br
+    ul
+        each post in list
+            li
+                a(href="/post/"+post.id)= post.title
+                | &nbsp;&nbsp;&nbsp;
+                span= post.lastModified
+                | &nbsp;&nbsp;&nbsp;
+                if _logged
+                    a(href="/admin/post/"+post.id+"/edit") Edit

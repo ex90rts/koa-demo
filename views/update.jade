@@ -1,0 +1,16 @@
+extends ./layout
+
+block content
+    h2 Update Post
+    br
+    form(action="/admin/post/"+id,method="post")
+        div
+            h3 Title
+            input(name="title", size="80", value=title)
+        div
+            h3 Content
+            textarea(name="content", rows="10", cols="80")= content
+        div
+            p
+        div
+            input(type="submit",value="Submit")

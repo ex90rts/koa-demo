@@ -1,0 +1,14 @@
+html
+    title Koa Blog
+    body
+        div
+            a(href="/") Index
+            | &nbsp;&nbsp;&nbsp;
+            if _logged
+                a(href="/admin/post/new") New
+                | &nbsp;&nbsp;&nbsp;
+                span= "Welcome: "+_username+", "
+                a(href="/logout") Logout
+            else
+                a(href="/login") Login
+        block content

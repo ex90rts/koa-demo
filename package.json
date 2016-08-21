@@ -1,0 +1,22 @@
+{
+  "name": "koa-demo",
+  "description": "A demo project for basic usages of koajs",
+  "version": "1.0.0",
+  "repository": "https://github/com/ex90rts/koa-demo",
+  "dependencies": {
+    "jade": "^1.11.0",
+    "koa": "^1.2.1",
+    "koa-bodyparser": "^2.2.0",
+    "koa-router": "^5.4.0",
+    "koa-session": "^3.3.1",
+    "koa-views": "^1.2.1",
+    "thunkify-wrap": "^1.0.4"
+  },
+  "scripts": {
+    "test": "make test",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">= 4.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+extends ./layout
+
+block content
+    h2 Error
+    br
+    div= message
+        if code===401
+            | &nbsp;&nbsp;&nbsp;
+            a(href="/login") Please login first
